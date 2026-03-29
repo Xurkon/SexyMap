@@ -147,9 +147,6 @@ function mod:OnEnable()
 	end
 	self:CreateMoversAndSetMovables()
 	self:RawHook("WatchFrame_Update", true)
-	
-	-- Reapply scale on zone changes to fix position/scale issues
-	self:RegisterEvent("PLAYER_ENTERING_WORLD", "Update")
 end
 
 function mod:UPDATE_WORLD_STATES()
@@ -331,16 +328,14 @@ do
 		if v then
 			for _, f in ipairs(movers) do
 				f.showParent = not not f:GetParent():IsVisible()		-- convert nil -> false
-				-- Only show parent if it was already visible (don't force show hidden frames like Boss1TargetFrame when no boss)
-				if f.showParent then
-					f:GetParent():Show()
-				end
+				f:GetParent():Show()
 				f:Show()
 			end	
 		else
 			for _, f in ipairs(movers) do
-				-- Store visibility state before hiding
-				f.wasShowParentVisible = f:GetParent():IsVisible()
+				if f.showParent == false then
+					f:GetParent():Hide()
+				end
 				f.showParent = nil
 				f:Hide()
 			end
