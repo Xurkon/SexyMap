@@ -74,3 +74,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [CurseForge](https://www.curseforge.com/wow/addons/sexymap)
 - [WoWInterface](https://www.wowinterface.com/downloads/info10177-SexyMap.html)
+
+## Screenshots
+
+![SexyMap Example](img/sexymap3.jpg)
+![Diablo Style](img/diablo.png)
+![Jewels Theme](img/jewels.jpg)
+![Parchment Theme](img/parchment.jpg)
+![Space Theme](img/space.png)
