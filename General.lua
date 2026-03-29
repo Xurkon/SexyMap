@@ -331,9 +331,7 @@ do
 		if v then
 			for _, f in ipairs(movers) do
 				f.showParent = not not f:GetParent():IsVisible()		-- convert nil -> false
-				if f.showParent then
-					f:GetParent():Show()
-				end
+				f:GetParent():Show()
 				f:Show()
 			end	
 		else
