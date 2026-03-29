@@ -331,6 +331,7 @@ do
 		if v then
 			for _, f in ipairs(movers) do
 				f.showParent = not not f:GetParent():IsVisible()		-- convert nil -> false
+				-- Only show parent if it was already visible (don't force show hidden frames like Boss1TargetFrame when no boss)
 				if f.showParent then
 					f:GetParent():Show()
 				end
@@ -338,7 +339,8 @@ do
 			end	
 		else
 			for _, f in ipairs(movers) do
-				-- Don't touch parent visibility - let the game handle Boss1TargetFrame etc.
+				-- Store visibility state before hiding
+				f.wasShowParentVisible = f:GetParent():IsVisible()
 				f.showParent = nil
 				f:Hide()
 			end
