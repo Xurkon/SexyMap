@@ -331,12 +331,13 @@ do
 		if v then
 			for _, f in ipairs(movers) do
 				f.showParent = not not f:GetParent():IsVisible()		-- convert nil -> false
-				f:GetParent():Show()
+				if f.showParent then
+					f:GetParent():Show()
+				end
 				f:Show()
 			end	
 		else
 			for _, f in ipairs(movers) do
-				-- Don't touch parent visibility - let the game handle Boss1TargetFrame etc.
 				f.showParent = nil
 				f:Hide()
 			end
