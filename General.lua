@@ -328,14 +328,13 @@ do
 		if v then
 			for _, f in ipairs(movers) do
 				f.showParent = not not f:GetParent():IsVisible()		-- convert nil -> false
-				f:GetParent():Show()
+				if f.showParent then
+					f:GetParent():Show()
+				end
 				f:Show()
 			end	
 		else
 			for _, f in ipairs(movers) do
-				if f.showParent == false then
-					f:GetParent():Hide()
-				end
 				f.showParent = nil
 				f:Hide()
 			end
