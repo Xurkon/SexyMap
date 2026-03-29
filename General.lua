@@ -330,18 +330,16 @@ do
 		local v = db.movers
 		if v then
 			for _, f in ipairs(movers) do
-				f.showParent = not not f:GetParent():IsVisible()		-- convert nil -> false
+				local parent = f:GetParent()
+				f.showParent = parent:IsVisible()
 				-- Only show parent if it was already visible (don't force show hidden frames like Boss1TargetFrame when no boss)
 				if f.showParent then
-					f:GetParent():Show()
+					parent:Show()
 				end
 				f:Show()
 			end	
 		else
 			for _, f in ipairs(movers) do
-				-- Store visibility state before hiding
-				f.wasShowParentVisible = f:GetParent():IsVisible()
-				f.showParent = nil
 				f:Hide()
 			end
 		end
