@@ -1,5 +1,7 @@
 # Changelog
 
+All changes by **Xurkon** unless otherwise noted.
+
 ## v1.0.1 (2026-03-28)
 
 - **[Fix — Minimap Scale]** Added `PLAYER_ENTERING_WORLD` event handler to reapply minimap scale after zone transitions. Previously, the minimap scale set by the user could reset after entering new zones or after loading screens.

@@ -56,6 +56,16 @@ Access the options through:
 
 Based on the original SexyMap addon by StormFX and contributors.
 
+## Maintainer
+
+Maintained by **Xurkon** - Custom fixes for Ascension/Ebonhold and other private servers.
+
+## Changes
+
+This version includes additional fixes for private server compatibility:
+- Minimap scale now persists correctly after zone changes on private servers
+- Various bug fixes and improvements
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
