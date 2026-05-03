@@ -426,7 +426,7 @@ do
 			angle = angle + 180
 		end
 		return angle
-	end
+	end	
 	
 	local function setPosition(frame, angle)
 		if not angle then

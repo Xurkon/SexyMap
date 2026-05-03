@@ -5,7 +5,7 @@
 ## Author: Antiarc
 ## OptionalDeps: Ace3, AceGUI-3.0-SharedMediaWidgets, LibBetterBlizzOptions-1.0, LibSharedMedia-3.0, Blizzard_TimeManager, TomTom, Capping
 ## SavedVariables: SexyMapDB
-## X-Curse-Packaged-Version: v1.2.4
+## X-Curse-Packaged-Version: v1.2.3p
 ## X-Curse-Project-Name: SexyMap Premium
 ## X-Curse-Project-ID: sexymap
 ## X-Curse-Repository-ID: wow/sexymap/mainline

@@ -70,11 +70,6 @@ This version includes additional fixes for private server compatibility:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Links
-
-- [CurseForge](https://www.curseforge.com/wow/addons/sexymap)
-- [WoWInterface](https://www.wowinterface.com/downloads/info10177-SexyMap.html)
-
 ## Screenshots
 
 ![SexyMap Example](img/sexymap3.jpg)
